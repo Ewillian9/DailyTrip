@@ -45,7 +45,7 @@
                         </div>
                     </div><!--- Infos block -->
                     <div class="">
-                        <a href="" # class="bg-white rounded-full w-fit h-fit grid place-items-center p-1.5 shadow-lg hover:bg-[#fba708] hover:-rotate-45c ursor-pointer">
+                        <a href="" # class="bg-white rounded-full w-fit h-fit grid place-items-center p-1.5 shadow-lg hover:bg-[#fba708] hover:-rotate-45 cursor-pointer">
                             <span class="material-symbols-outlined">arrow_forward</span>
                         </a>
                     </div><!-- Go to trip -->
