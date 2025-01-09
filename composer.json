@@ -1,0 +1,19 @@
+{
+    "name": "jensone/daily-trip",
+    "description": "A PHP application for tracking daily trips",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "MbaM2\\DailyTrip\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jensone"
+        }
+    ],
+    "require-dev": {
+        "fakerphp/faker": "^1.24"
+    }
+}

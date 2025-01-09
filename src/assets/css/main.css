@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: "Inter", sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto Condensed", sans-serif;
+    letter-spacing: .01rem;
+    color: #0c274e;
+}
+.btn {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    background-color: #fba708;
+    font-size: 1.35rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+.animate-cloud {
+    animation: clouds 5s linear infinite;
+}
+@keyframes clouds {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-5%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

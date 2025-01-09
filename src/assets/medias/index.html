@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DailyTrip</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: "Inter", sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: "Roboto Condensed", sans-serif;
+            letter-spacing: .01rem;
+            color: #0c274e;
+        }
+        .btn {
+            font-family: "Roboto Condensed", sans-serif;
+            font-weight: 300;
+            text-decoration: none;
+            background-color: #fba708;
+            font-size: 1.35rem;
+            padding: 0.5rem 1rem;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+        }
+        .animate-cloud {
+            animation: clouds 5s linear infinite;
+        }
+        @keyframes clouds {
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(-5%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body class="bg-sky-50">
+    <div class="relative grid place-items-center max-w-2xl h-[620px] mx-auto mb-60">
+        <div class="absolute z-50 top-20 flex items-center justify-between w-full h-[230px]">
+            <img src="./cloud.png" alt="cloud 1" class="place-self-end drop-shadow-xl brightness-125 animate-cloud" width="180">
+            <img src="./cloud.png" alt="cloud 2" class="place-self-start drop-shadow-xl brightness-125 animate-cloud" width="100">
+            <img src="./cloud.png" alt="cloud 3" class="place-self-end drop-shadow-xl brightness-125 animate-cloud" width="80">
+            <img src="./cloud.png" alt="cloud 4" class="drop-shadow-xl brightness-125 animate-cloud" width="150">
+        </div><!-- Clouds -->
+        <div class="absolute z-40 -bottom-64">
+            <img src="./dailytrip.svg" alt="logo dailytrip" class="w-full h-full">
+        </div><!-- Logo -->
+        <div class="absolute -bottom-28 bg-white blur-2xl h-72 w-44 rounded-full z-30"></div><!-- Background -->
+        <div class="relative z-30 w-full h-full">
+            </div>
+            <div 
+                class="absolute z-10 left-48 w-[280px] h-[400px] rounded-2xl shadow-lg bg-center bg-cover"
+                style="background-image: url('./images/vtt.jpg');"
+            ></div><!-- Image Top -->
+            <div class="flex justify-between items-center absolute w-full bottom-0">
+                <div 
+                    class="z-0 right-0  w-[280px] h-[400px] rounded-2xl shadow-lg bg-center bg-cover"
+                    style="background-image: url('./images/roadtrip.jpg');"
+                ></div><!-- Image left -->
+                <div 
+                    class="z-20 left-0  w-[280px] h-[400px] rounded-2xl shadow-lg bg-center bg-cover"
+                    style="background-image: url('./images/desert.jpg');"
+                ></div><!-- Image right -->
+            </div>
+        </div><!-- Image Container -->
+    </div><!-- Component Container -->
+
+    <div class="">
+        <div class="text-center">
+            <h1 class="text-3xl md:text-5xl lg:text-7xl font-bold uppercase">
+                En route pour<br><span class="lg:text-8xl">l'aventure</span>
+            </h1>
+            <br>
+            <!-- Zoom in on hover -->
+            <a href="#" class="btn hover:text-white hover:bg-[#0c274e] hover:shadow-lg">
+                C'est parti
+            </a>
+        </div>
+    </div><!-- Section CTA -->
+    <div class="max-w-screen-lg mx-auto mt-44 mb-8">
+        <h3 class="lg:text-3xl">Les aventures les plus populaires</h3>
+    </div>
+    <div class="mb-44 flex justify-around max-w-screen-lg mx-auto">
+        <div class="relative">
+            <div class="absolute bg-gradient-to-b from-transparent from-60% to-neutral-900 w-full h-full rounded-lg">
+                <div class="grid w-full h-full rounded-lg content-between p-2">
+                    <button class="place-self-end rounded-full w-fit h-fit grid place-items-center p-1.5 hover:bg-red-600 transition ease-in-out text-white cursor-pointer">
+                    <span class="material-symbols-outlined">favorite</span>
+                    </button><!-- Favoris button-->
+                    <div class="flex justify-between items-center">
+                        <div class="text-white font-bold">
+                            <p>lorem ipsum...</p>
+                            <div class="">
+                                <span class="material-symbols-outlined text-yellow-500">star</span>
+                                <span class="material-symbols-outlined text-yellow-500">star</span>
+                                <span class="material-symbols-outlined text-yellow-500">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                            </div>
+                        </div><!--- Infos block -->
+                        <div class="">
+                            <a href=""# class="bg-white rounded-full w-fit h-fit grid place-items-center p-1.5 shadow-lg hover:bg-[#fba708] hover:-rotate-45 cursor-pointer">
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </a>
+                        </div><!-- Go to trip -->
+                    </div>
+                </div>
+            </div>
+            <img src="https://picsum.photos/id/15/200/300" alt="" class="rounded-lg">
+        </div>
+        <div class="relative">
+            <div class="absolute bg-gradient-to-b from-transparent from-60% to-neutral-900 w-full h-full rounded-lg">
+                <div class="grid w-full h-full rounded-lg content-between p-2">
+                    <button class="place-self-end rounded-full w-fit h-fit grid place-items-center p-1.5 hover:bg-red-600 transition ease-in-out text-white cursor-pointer">
+                    <span class="material-symbols-outlined">favorite</span>
+                    </button><!-- Favoris button-->
+                    <div class="flex justify-between items-center">
+                        <div class="text-white font-bold">
+                            <p>lorem ipsum...</p>
+                            <div class="">
+                                <span class="material-symbols-outlined text-yellow-500">star</span>
+                                <span class="material-symbols-outlined text-yellow-500">star</span>
+                                <span class="material-symbols-outlined text-yellow-500">star</span>
+                                <span class="material-symbols-outlined text-yellow-500">star</span>
+                            </div>
+                        </div><!--- Infos block -->
+                        <div class="">
+                            <a href=""# class="bg-white rounded-full w-fit h-fit grid place-items-center p-1.5 shadow-lg hover:bg-[#fba708] hover:-rotate-45 cursor-pointer">
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </a>
+                        </div><!-- Go to trip -->
+                    </div>
+                </div>
+            </div>
+            <img src="https://picsum.photos/id/16/200/300" alt="" class="rounded-lg">
+        </div>
+        <div class="relative">
+            <div class="absolute bg-gradient-to-b from-transparent from-60% to-neutral-900 w-full h-full rounded-lg">
+                <div class="grid w-full h-full rounded-lg content-between p-2">
+                    <button class="place-self-end rounded-full w-fit h-fit grid place-items-center p-1.5 hover:bg-red-600 transition ease-in-out text-white cursor-pointer">
+                    <span class="material-symbols-outlined">favorite</span>
+                    </button><!-- Favoris button-->
+                    <div class="flex justify-between items-center">
+                        <div class="text-white font-bold">
+                            <p>lorem ipsum...</p>
+                            <div class="">
+                                <span class="material-symbols-outlined text-yellow-500">star</span>
+                                <span class="material-symbols-outlined text-yellow-500">star</span>
+                                <span class="material-symbols-outlined text-yellow-500">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                            </div>
+                        </div><!--- Infos block -->
+                        <div class="">
+                            <a href=""# class="bg-white rounded-full w-fit h-fit grid place-items-center p-1.5 shadow-lg hover:bg-[#fba708] hover:-rotate-45 cursor-pointer">
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </a>
+                        </div><!-- Go to trip -->
+                    </div>
+                </div>
+            </div>
+            <img src="https://picsum.photos/id/46/200/300" alt="" class="rounded-lg">
+        </div>
+        <div class="relative">
+            <div class="absolute bg-gradient-to-b from-transparent from-60% to-neutral-900 w-full h-full rounded-lg">
+                <div class="grid w-full h-full rounded-lg content-between p-2">
+                    <button class="place-self-end rounded-full w-fit h-fit grid place-items-center p-1.5 hover:bg-red-600 transition ease-in-out text-white cursor-pointer">
+                    <span class="material-symbols-outlined">favorite</span>
+                    </button><!-- Favoris button-->
+                    <div class="flex justify-between items-center">
+                        <div class="text-white font-bold">
+                            <p>lorem ipsum...</p>
+                            <div class="">
+                                <span class="material-symbols-outlined text-yellow-500">star</span>
+                                <span class="material-symbols-outlined text-yellow-500">star</span>
+                                <span class="material-symbols-outlined text-yellow-500">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                            </div>
+                        </div><!--- Infos block -->
+                        <div class="">
+                            <a href=""# class="bg-white rounded-full w-fit h-fit grid place-items-center p-1.5 shadow-lg hover:bg-[#fba708] hover:-rotate-45 cursor-pointer">
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </a>
+                        </div><!-- Go to trip -->
+                    </div>
+                </div>
+            </div>
+            <img src="https://picsum.photos/id/29/200/300" alt="" class="rounded-lg">
+        </div>
+    </div><!-- Popular trips -->
+
+    <div class="max-w-screen-lg mx-auto relative"> 
+        <img src="./road.svg" alt="road" class="absolute z-0 w-full h-full opacity-30">
+        <div class="mt-44 mb-8">
+            <h3 class="lg:text-5xl font-bold uppercase text-center">DailyTrip c'est :</h3>
+        </div>
+        <div class="grid grid-cols-3 gap-4 mb-44">
+            <div class="flex flex-col justify-center text-center min-h-40">
+                <h4 class="text-3xl font-bold text-slate-600"><span class="text-blue-950" id="counter-adventures">1000</span></h4>
+                <p class="uppercase italic text-sm">aventures publiées</p>
+            </div>
+            <div class="flex flex-col justify-center text-center min-h-40">
+                <h4 class="text-3xl font-bold text-slate-600"><span class="text-blue-950" id="counter-kilometers">34530</span> km</h4>
+                <p class="uppercase italic text-sm">parcourus</p>
+            </div>
+            <div class="flex flex-col justify-center text-center min-h-40">
+                <h4 class="text-3xl font-bold text-slate-600"><span class="text-blue-950" id="counter-comments">5000</span></h4>
+                <p class="uppercase italic text-sm">commentaires</p>
+            </div>
+            <div class="flex flex-col justify-center text-center min-h-40">
+                <h4 class="text-3xl font-bold text-slate-11600"><span class="text-blue-950" id="counter-photos">000</span></h4>
+                <p class="uppercase italic text-sm">photos publiées</p>
+            </div>
+            <div class="flex flex-col justify-center text-center min-h-40">
+                <h4 class="text-3xl font-bold text-slate-600"><span class="text-blue-950" id="counter-shares">10200</span> fois</h4>
+                <p class="uppercase italic text-sm">partagés</p>
+            </div>
+            <div class="flex flex-col justify-center text-center min-h-40">
+                <h4 class="text-3xl font-bold text-slate-600"><span class="text-blue-950" id="counter-lorem">2000</span> x</h4>
+                <p class="uppercase italic text-sm">lorem ipsum dolor</p>
+            </div>
+        </div>
+    </div><!-- Counter -->
+
+
+    <script>
+        // Configuration des compteurs avec leurs valeurs finales
+const counters = [
+  { id: 'counter-adventures', end: 157, suffix: '' },     // aventures
+  { id: 'counter-kilometers', end: 15430, suffix: '' },   // km
+  { id: 'counter-comments', end: 892, suffix: '' },       // commentaires
+  { id: 'counter-photos', end: 3254, suffix: '' },        // photos
+  { id: 'counter-shares', end: 467, suffix: '' },         // partages
+  { id: 'counter-lorem', end: 789, suffix: '' }           // lorem ipsum
+];
+
+// Fonction pour formatter les nombres avec des séparateurs de milliers
+const formatNumber = (num) => {
+  return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+};
+
+// Fonction d'animation pour un compteur individuel
+const animateCounter = (counter) => {
+  const element = document.getElementById(counter.id);
+  if (!element) return; // Sécurité si l'élément n'existe pas
+  
+  const duration = 2000; // Durée de l'animation en ms
+  const steps = 60; // Nombre d'étapes d'animation
+  const stepDuration = duration / steps;
+  
+  let current = 0;
+  const increment = counter.end / steps;
+  
+  const updateCounter = () => {
+    current += increment;
+    if (current > counter.end) {
+      current = counter.end;
+    }
+    element.textContent = formatNumber(Math.floor(current)) + counter.suffix;
+    
+    if (current < counter.end) {
+      setTimeout(updateCounter, stepDuration);
+    }
+  };
+  
+  updateCounter();
+};
+
+// Fonction pour démarrer l'animation lorsque les éléments sont visibles
+const startAnimationOnScroll = () => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Démarre l'animation pour tous les compteurs
+        counters.forEach(counter => animateCounter(counter));
+        // Déconnecte l'observer une fois l'animation démarrée
+        observer.disconnect();
+      }
+    });
+  }, {
+    threshold: 0.5 // Déclenche quand 50% de l'élément est visible
+  });
+
+  // Observer le conteneur des compteurs
+  const counterSection = document.querySelector('.grid');
+  if (counterSection) {
+    observer.observe(counterSection);
+  }
+};
+
+// Démarrer la détection au chargement de la page
+document.addEventListener('DOMContentLoaded', startAnimationOnScroll);
+    </script>
+</body>
+</html>
